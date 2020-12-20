@@ -1,5 +1,58 @@
+body {
+    margin: 0;
+}
+
 .app {
-    .background {
-        background: url("");
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("../images/back.svg");
+        background-size: cover;
+        height: 100vh;
+
+        .jeremy-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: top;
+            align-items: center;
+            background-color: rgba(255, 255, 255, .4);
+            backdrop-filter: blur(8px);
+            border: solid 1px lightgray;
+            padding: 50px 100px;
+            box-sizing: border-box;
+            height: 45vh;
+
+            .photo {
+                width: 12vw;
+            }
+
+            .name {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                font-size: 2rem;
+                color: white;
+
+                margin-top: 10px;
+            }
+
+            .description {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 500;
+                color: white;                
+            }
+
+            .qualities {
+                margin-top: 35px;
+
+                display: grid;
+                grid-template-rows: 42px 42px;
+                grid-template-columns: repeat(6, 42px);
+
+                img {
+                    width: 32px;
+                }
+            }
+        }
     }
 }
