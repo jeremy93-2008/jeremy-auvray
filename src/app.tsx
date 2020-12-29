@@ -46,10 +46,20 @@ export function App() {
                 <div className="jeremy-container">
                     <div className="header">
                         <div className="icon linkedin">
-                            <animated.img src={linkedinPhoto} style={propsQualities[qualitiesArray.length - 1]} />
+                            <a target="_blank" href="https://www.linkedin.com/in/jeremy-auvray-3a1b7839/">
+                                <animated.img
+                                    src={linkedinPhoto}
+                                    style={propsQualities[qualitiesArray.length - 1]}
+                                />
+                            </a>
                         </div>
                         <div className="icon github">
-                            <animated.img src={githubPhoto} style={propsQualities[qualitiesArray.length - 1]} />
+                            <a target="_blank" href="https://github.com/jeremy93-2008">
+                                <animated.img
+                                    src={githubPhoto}
+                                    style={propsQualities[qualitiesArray.length - 1]}
+                                />
+                            </a>
                         </div>
                     </div>
                     <animated.img className="photo" src={photo} style={props} />
